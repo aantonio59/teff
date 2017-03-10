@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Amanuel Antonio(AA)</title>
 <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <style type="text/css">
 body {
     background-color:/* #454545*/ white;
-    padding: 1%;
+ 
     font-family: helvetica;
     font-size: 20px;
     line-height: 26px;
@@ -78,10 +85,11 @@ main {
     width: 100%;
     display: flex;
 }
+
 aside {
     background-color: #747474;
-    padding: 20px;
-    flex-basis: 20%;
+    padding: 2px;
+    width: 7vw;
 }
 aside ul {
     list-style: none;
@@ -97,37 +105,57 @@ aside li a {
     color: white;
     text-decoration: none;
 }
+
 section {
-    flex-basis: 75%;
+   /* flex-basis: 75%;*/
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
 }
 article {
     background-color:/* #737373*/;
-    flex: 3;
+   /* flex: 3;*/
+       
+}
+article img {
+    width: 40%;
+    height: auto;
 }
 article p {
     font-family: 'Harmattan', sans-serif;
+    width: 50%;
     color: black;
-    padding: 2%;
+    padding: 6%;
 }
 article .left {
-    float: left;
-    color: black;
-    padding: 2%;
-    width: 50%;
+    display: flex;
+    width: 90%;
+
+}
+.left img {
+    order: 1;
+}
+.left p {
+    order: 2;
 }
 article .right{
-    color: dimgray;
-    float: right;
-    padding: 2%;
-    width: 50%;
+    display: flex;
+    width: 90%;
+
+}
+.right img {
+    order: 2;
+}
+.right p {
+    order: 1;
 }
 
 footer {
     background-color: grey;
-     
+    height; 14vw; 
     flex: 1;
     position: relative;
     margin-top: 4vw;
@@ -160,50 +188,68 @@ footer {
 
 <aside>
 <ul>
+      <li>
+        <span class="glyphicon">&#xe012;</span>
+      </p> </li>
+      <li><a href="#">Blue</a><span class="glyphicon">&#xe008;</span></li>
+      <li><a href="#">Blue<span class="glyphicon">&#xe035;</span></a></li>
+      <li><a href="#">Blue<span class="glyphicon">&#xe109;</span></a></li>
+      <li><a href="#">Blue<span class="glyphicon">&#xe021;</span></a></li>
       <li><a href="#">Blue</a></li>
       <li><a href="#">Blue</a></li>
       <li><a href="#">Blue</a></li>
       <li><a href="#">Blue</a></li>
+      <li><a href="#">Blue</a></li>
+
 </ul>
 </aside>
+
 <section>
 <article>
+<h3>Ask Me Anything</h3>
+
 <div class="left">
-<h3>Ask Me Anything</h3>
-<br>
+
+<img src="../media/img/1.jpg" alt="image">
 <p>marcoBacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
 </div>
 </article>
 
 <article>
+<h3>Ask Me Anything</h3>
+
 <div class="right">
-<h3>Ask Me Anything</h3>
-<br>
+<img src="../media/img/2.jpg" alt="image">
 <p>marcoBacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
 </div>
 </article>
 
 <article>
+<h3>Ask Me Anything</h3>
+
 <div class="left">
-<h3>Ask Me Anything</h3>
-<br>
+<img src="../media/img/1.jpg" alt="image"></a>
 <p>marcoBacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
 </div>
 </article>
 
 <article>
-<div class="right">
 <h3>Ask Me Anything</h3>
-<br>
+<div class="right">
+<img src="../media/img/3.jpg" alt="image">
 <p>marcoBacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
 </div>
 </article>
+
+</section>
+</main>
 
 <footer>
 <h4>FAQ</h4>
+<span class="social social-facebook"></span>
+<em>created by: The legend Amanuel</em>
 </footer>
-</section>
-</main>
+
 
 
 
